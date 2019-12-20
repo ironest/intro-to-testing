@@ -42,3 +42,13 @@ For each JS file that needs to be tested
 3. Inside the callback function, invoke `expect()`
 4. Inside `expect()` run the function to test with its parameters. Example `sum(1, 2)`
 5. On top of `expect()` chain up any **matcher methods** such as **toBe** or **toThrow**. For more examples, refer to [Common Matchers](####Common-Matchers)
+
+**Real examples**
+
+```js
+test("Properly adding two numbers", () => {
+    expect(
+        sum(1, 2)
+    ).toBe(3);
+})
+```
