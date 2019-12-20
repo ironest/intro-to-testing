@@ -26,3 +26,19 @@ Once installed, let's configure the `package.json` to use that when calling `npm
   }
 ```
 
+### Test preparation
+
+For each JS file that needs to be tested
+* Make sure to export each functions from the file with `module.exports`
+* Create a brand new file called `file.test.js`
+* In the new file, import (with the `require` keyword) each function to be tested
+
+### Writing Tests
+
+1. Invoke the `test()` function
+2. Pass two arguments:
+   * A string that describes the test
+   * A callback functions that runs the test (see point 3 below)
+3. Inside the callback function, invoke `expect()`
+4. Inside `expect()` run the function to test with its parameters. Example `sum(1, 2)`
+5. On top of `expect()` chain up any **matcher methods** such as **toBe** or **toThrow**. For more examples, refer to [Common Matchers](####Common-Matchers)
