@@ -52,3 +52,13 @@ test("Properly adding two numbers", () => {
     ).toBe(3);
 })
 ```
+
+#### Common Matchers
+
+Matchers are methods that can be "chained" after `expect()`.
+The simplest way to test a value is with exact equality.
+
+* toBe()
+* not.toBe()
+* toEqual()
+***toEqual** works on objects and recursively checks every field of an object or array*
