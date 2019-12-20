@@ -87,3 +87,13 @@ The simplest way to test a value is with exact equality.
 
 toContain()
 
+#### Exceptions
+
+* toThrow()
+* toThrow(Error)
+* toThrow('insert here the exact error message');
+* toThrow(/regex/);
+
+#### And More
+
+For a complete list of matchers, check out the [reference docs](https://jestjs.io/docs/en/expect)
