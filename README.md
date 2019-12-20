@@ -11,3 +11,18 @@ touch .gitignore
 echo -e "# dependencies\nnode_modules/\n" >> .gitignore
 echo -e "# coverage\ncoverage/\n" >> .gitignore
 ```
+
+### Installing dependencies
+
+From the terminal, install the `jest` package
+```sh
+npm install --save-dev jest
+```
+
+Once installed, let's configure the `package.json` to use that when calling `npm test`
+```json
+  "scripts": {
+    "test": "jest"
+  }
+```
+
