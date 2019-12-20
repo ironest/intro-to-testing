@@ -77,3 +77,13 @@ The simplest way to test a value is with exact equality.
 * toBe()
 * toEqual()
 ***toBe** and **toEqual** are equivalent (for numbers)*
+
+#### Strings
+
+* not.toMatch(/regex/)
+* toMatch(/regex/)
+
+#### Arrays and iterables
+
+toContain()
+
