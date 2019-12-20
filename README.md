@@ -2,7 +2,7 @@
 
 The following instructions **ARE NOT** to install/use this repo; they are to recreate for scratch this project.
 
-### My personal script to set up any repo
+### Setting up the repo
 
 ```sh
 npm init -y
@@ -41,7 +41,7 @@ For each JS file that needs to be tested
    * A callback functions that runs the test (see point 3 below)
 3. Inside the callback function, invoke `expect()`
 4. Inside `expect()` run the function to test with its parameters. Example `sum(1, 2)`
-5. On top of `expect()` chain up any **matcher methods** such as **toBe** or **toThrow**. For more examples, refer to [Common Matchers](####Common-Matchers)
+5. On top of `expect()` chain up any **matcher methods** such as **toBe** or **toThrow**. For more examples, refer to [Common Matchers](###-common-matchers)
 
 **Real examples**
 
@@ -53,7 +53,7 @@ test("Properly adding two numbers", () => {
 })
 ```
 
-#### Common Matchers
+### Common Matchers
 
 Matchers are methods that can be "chained" after `expect()`.
 The simplest way to test a value is with exact equality.
@@ -85,7 +85,7 @@ The simplest way to test a value is with exact equality.
 
 #### Arrays and iterables
 
-toContain()
+* toContain()
 
 #### Exceptions
 
