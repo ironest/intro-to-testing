@@ -41,7 +41,7 @@ For each JS file that needs to be tested
    * A callback functions that runs the test (see point 3 below)
 3. Inside the callback function, invoke `expect()`
 4. Inside `expect()` run the function to test with its parameters. Example `sum(1, 2)`
-5. On top of `expect()` chain up any **matcher methods** such as **toBe** or **toThrow**. For more examples, refer to [Common Matchers](###-common-matchers)
+5. On top of `expect()` chain up any **matcher methods** such as **toBe** or **toThrow**. For more examples, refer to [Common Matchers](###common-matchers)
 
 **Real examples**
 
