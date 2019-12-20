@@ -62,3 +62,18 @@ The simplest way to test a value is with exact equality.
 * not.toBe()
 * toEqual()
 ***toEqual** works on objects and recursively checks every field of an object or array*
+
+#### Truthiness
+
+* toBeTruthy()
+* toBeFalsy()
+
+#### Numbers
+
+* toBeGreaterThan()
+* toBeGreaterThanOrEqual()
+* toBeLessThan()
+* toBeLessThanOrEqual()
+* toBe()
+* toEqual()
+***toBe** and **toEqual** are equivalent (for numbers)*
