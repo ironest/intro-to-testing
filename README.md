@@ -1,4 +1,4 @@
-# intro-to-testing
+# intro-to-unit-testing
 
 The following instructions **ARE NOT** to install/use this repo; they are to recreate for scratch this project.
 
