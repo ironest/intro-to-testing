@@ -98,6 +98,30 @@ The simplest way to test a value is with exact equality.
 
 For a complete list of matchers, check out the [reference docs](https://jestjs.io/docs/en/expect)
 
+### Test suite
+
+A test suite, less commonly known as a 'validation suite', is a collection of test cases.
+With Jest, we can group together many `test()` functions into one bigger suite.
+This is done by wrapping everything in `describe()`.
+
+```js
+describe("Properly adding two numbers", () => {
+
+    test("Sum 1 and 2", () => {
+        const actual = sum(1, 2);
+        const expectation = 3;
+        expect(actual).toBe(expectation);
+    })
+    
+    test("Sum 2 and 3", () => {
+        const actual = sum(2, 3);
+        const expectation = 5;
+        expect(actual).toBe(expectation);
+    })
+
+})
+```
+
 ### Test Coverage
 
 Testing specific functionality is cool, but not enough; we want to make sure that the whole content of our files is properly tested. Or at least most of it.
