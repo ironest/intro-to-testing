@@ -83,11 +83,11 @@ The simplest way to test a value is with exact equality.
 * not.toMatch(/regex/)
 * toMatch(/regex/)
 
-#### Arrays and iterables
+#### Arrays and iterables
 
 * toContain()
 
-#### Exceptions
+#### Exceptions
 
 * toThrow()
 * toThrow(Error)
@@ -97,3 +97,18 @@ The simplest way to test a value is with exact equality.
 #### And More
 
 For a complete list of matchers, check out the [reference docs](https://jestjs.io/docs/en/expect)
+
+### Test Coverage
+
+Testing specific functionality is cool, but not enough; we want to make sure that the whole content of our files is properly tested. Or at least most of it.
+This is when the concept of **coverage** comes in.
+
+1. Modify package.json
+2. Pass the new `--coverage` option flag to jest
+3. Re-run the tests
+
+![Terminal Coverage Report](./images/terminal-coverage-report.png)
+
+With the Jest default configuration, the same coverage report is also generated in a `lcov` format under `./coverage` folder
+
+![HTML Coverage Report](./images/html-coverage-report.png)
