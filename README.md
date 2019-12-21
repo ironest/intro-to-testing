@@ -39,17 +39,17 @@ For each JS file that needs to be tested
 2. Pass two arguments:
    * A string that describes the test
    * A callback functions that runs the test (see point 3 below)
-3. Inside the callback function, invoke `expect()`
-4. Inside `expect()` run the function to test with its parameters. Example `sum(1, 2)`
-5. On top of `expect()` chain up any **matcher methods** such as **toBe** or **toThrow**. For more examples, refer to [Common Matchers](###common-matchers)
+3. Declare the actual and the expectation values
+4. Invoke `expect()` with the actual parameter
+5. On `expect()` chain up any **matcher methods** such as **toBe** or **toThrow** with the expectation parameter. For more examples, refer to [Common Matchers](###common-matchers)
 
-**Real examples**
+**Real example**
 
 ```js
-test("Properly adding two numbers", () => {
-    expect(
-        sum(1, 2)
-    ).toBe(3);
+test("Sum 1 and 2", () => {
+    const actual = sum(1, 2);
+    const expectation = 3;
+    expect(actual).toBe(expectation);
 })
 ```
 
